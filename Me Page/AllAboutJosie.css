@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(76, 3, 76)
+}
+
+td {
+    color:honeydew;
+    padding: 1%;
+}
+
+b{
+    color:rgb(12, 213, 213);
+}
+
+h4 {
+    color:honeydew;
+}
+
+h1 {
+    color:rgb(12, 213, 213);
+}
+
+h3 {
+    color:honeydew;
+}
+
+table{
+    border-style:solid;
+    border-color:rgb(12, 213, 213);
+    border:2px;
+}

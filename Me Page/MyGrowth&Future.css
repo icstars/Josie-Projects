@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(76, 3, 76);
+}
+
+ol {
+    color: honeydew; 
+    font-size: 3;
+    font-style: times new roman;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    color:rgb(12, 213, 213)
+}
+
+h4 {
+    color:rgb(12, 213, 213)
+}
+
+h5{
+    color:honeydew;
+}
+
+input[type="text"] {
+    background-color: honeydew;
+    color: rgb(76, 3, 76);
+    border: 2px solid rgb(183, 8, 183);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover {
+    background-color: rgb(255, 158, 255);
+}
+
+input[type="submit"]{
+    background-color:rgb(121, 255, 255);
+    border:2px solid rgb(121, 255, 255);
+    padding:5px;
+    border-radius:5px;
+    font: times new roman;
+    color: honeydew
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(12, 213, 213);
+    border:2px solid rgb(12, 213, 213);
+    padding:5px;
+    border-radius:5px;
+}
+
+form{
+    color: honeydew
+}
