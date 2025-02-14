@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Number Guessing Game</title>
+    </head>
+    <body>
+        <h1>Number Guessing Game</h1>
+        <p>Guess a number between 1 and 100:</p>
+        <input type="text" id="userGuess" placeholder = "Enter your guess"/>
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id = "message"></p>
+    </body>
+    <script>
+        //JavaScript code will go here.
+        const targetNumber = Math.floor(Math.random(8) * 100 + 1); //There is a target number that will never change. mathFloor sets up an expression that makes it so the number can't be 0, and the *100 and +1 is an important part of this. Whatever number is entered into the mathNumber is the answer that users/players are trying to guess. 
+        let attempts = 0;
+
+        function checkGuess() { // This begins the recipe of checking the user's guess. 
+            const userGuess = parseInt(document.getElementById("userGuess").value); // parseInt takes whatever guess the user inputs and rounds it to the nearest whole number.
+            attempts++;
+
+            if (userGuess === targetNumber) {
+                document.getElementById("message").innerHTML = `Congratulations! You guessed the number!
+                ${targetNumber} in ${attempts} attempts.`;
+            } else if (userGuess < targetNumber) {
+                document.getElementById ("message").innerHTML = `Try a 
+                higher number.`;
+            } else {
+                document.getElementById ("message").innerHTML = `Try a lower number.`;
+            }
+        }
+
+    </script>
+</html>
